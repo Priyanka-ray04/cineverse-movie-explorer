@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff6b6b;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#welcomeText {
+  color: #b3b3b3;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #b3b3b3;
+  font-size: 18px;
+}
+
+.search-box {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: white;
+}
+
+.movies-container {
+  padding: 40px 8%;
+}
+
+#movieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.movie-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-info h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.movie-info p {
+  color: #b3b3b3;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.fav-heading {
+  margin-bottom: 30px;
+}
+
+#favoritesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.remove-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.home-btn {
+  text-decoration: none;
+  color: white;
+  background: #ff6b6b;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+.fav {
+  text-decoration: none;
+  color: white;
+}

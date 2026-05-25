@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CineVerse</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">CineVerse</div>
+      <div class="nav-right">
+        <p id="welcomeText"></p>
+
+        <a class="fav" href="favorites.html">Favorites❤️</a>
+
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Discover Amazing Movies</h1>
+
+      <p>Search and explore your favorite movies</p>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search movie..." />
+
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <section class="movies-container">
+      <div id="movieGrid"></div>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
